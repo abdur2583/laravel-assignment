@@ -13,7 +13,7 @@ class ProfileController extends Controller {
             "age"  => $age,
             "id"   => $id,
         );
-        return $data;
+        return response($data, "200");
     }
     function setCookie(){
         //Also make a cookie; name as `access_token` , value  as `123-XYZ` , minutes as 1, path as ‘/’, domain as $_SERVER[‘SERVER_NAME’], secure as false and httpOnly as true.
